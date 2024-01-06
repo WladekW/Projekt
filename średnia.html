@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>OCENA</title>
+  <style>
+    body {
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      margin: 20px;
+      text-transform: uppercase;
+    }
+
+    h2 {
+      text-align: center;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    input {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 10px;
+    }
+
+    button {
+      padding: 10px 20px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #45a049;
+    }
+
+    #result {
+      font-weight: bold;
+    }
+  </style>
+</head>
+
+<body>
+  <h2>Obliczanie średniej ocen z wagą</h2>
+
+  <label for="grades">Oceny (oddzielone spacją):</label>
+  <input type="text" id="grades">
+
+  <label for="weights">Wagi (oddzielone spacją):</label>
+  <input type="text" id="weights">
+
+  <button onclick="calculateGrade()">Oblicz średnią</button>
+
+  <p>Średnia ocen z wagą: <span id="result"></span></p>
+
+  <script>
+    function calculateGrade() {
+      var gradesInput = document.getElementById('grades').value;
+      var weightsInput = document.getElementById('weights').value;
+
+      var grades = gradesInput.split(' ').map(Number);
+      var weights = weightsInput.split(' ').map(Number);
+
+      if (grades.length !== weights.length) {
+        alert("Liczba ocen i wag musi być taka sama.");
+        return;
+      }
+
+      var sum = 0;
+      var weightSum = 0;
+
+      for (var i = 0; i < grades.length; i++) {
+        sum += grades[i] * weights[i];
+        weightSum += weights[i];
+      }
+
+      var weightedAverage = sum / weightSum;
+
+      document.getElementById('result').innerText = weightedAverage.toFixed(2);
+    }
+  </script>
+</body>
+
+</html>
