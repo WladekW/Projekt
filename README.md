@@ -4,7 +4,7 @@
 
 ### :man_technologist: O mnie:
 
-Jestem poczętkującym programistą<img src="https://media.giphy.com/media/WUlplcMpOCEmTGBtBW/giphy.gif" width="30px">.Moja droga do IT zaczeła się kilka lat temu, lubie programować i bawić się stronkami internetowymi. Mam nadzieję, że moje projekty będą coraz lepiej!
+Jestem poczętkującym programistą<img src="https://media.giphy.com/media/WUlplcMpOCEmTGBtBW/giphy.gif" width="30px">.Moja droga do IT zaczeła się kilka lat temu, lubie programować i bawić się stronkami internetowymi. Mam nadzieję, że moje projekty będą coraz lepsze!
 
 
 - :zap: Jestem uczniem ZSMiO nr 5 w Łomży.
